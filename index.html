@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-A-L Ranch Loyalty Program</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+
+    <div class="content">
+    <div class="top-header">
+        <img src="images/header.png" alt="C-A-L Ranch Loyalty Program">
+    </div>
+
+    <div class="info">
+        <div class="info-title">
+            What is the <span class="nowrap">C-A-L</span> Ranch Loyalty Program?
+        </div>
+        <div class="info-text">
+            THE C-A-L RANCH LOYALTY PROGRAM IS A WAY OF REWARDING OUR AWESOME, LOYAL CUSTOMERS! FOR EVERY DOLLAR YOU
+            SPEND AT <span class="nowrap">C-A-L</span> RANCH STORES YOU EARN 1 LOYALTY POINT. ONCE YOU EARN A TOTAL OF 500 LOYALTY POINTS, YOU
+            EARNED $5 LOYALTY DOLLARS THAT CAN BE USED IN ANY OF OUR STORES. LOYALTY POINTS AND LOYALTY DOLLARS CAN BE
+            BANKED THROUGH OUT THE YEAR AND USED ON ANY TRANSACTION IN $5 INCREMENTS. <a href="#">LEARN MORE.</a>
+        </div>
+    </div>
+
+    <div class="bottom-header">
+        <img src="images/header-bottom.png" alt="C-A-L Ranch Loyalty Program">
+    </div>
+
+    <div class="faq">
+        <button class="accordion">WHEN WILL LOYALTY POINTS APPEAR IN MY ACCOUNT?</button>
+        <div class="panel">
+            <p>Generally, the next day after you earned your Loyalty Points they will appear in your account.  Each night our system will take your transaction(s) from the day and upload them into our system.</p>
+        </div>
+
+        <button class="accordion">HOW DO I KNOW THE BALANCE OF MY LOYALTY POINTS?</button>
+        <div class="panel">
+            <p>Any cashier can let you know the balance of your Loyalty Points at any time.  Once you have accumulated enough Loyalty Points for an in-store credit you can elect to accumulate Loyalty Points or use them on your purchase.</p>
+        </div>
+
+        <button class="accordion">Do my Loyalty Points and Loyalty Dollars expire?</button>
+        <div class="panel">
+            <p>Loyalty Points and Loyalty Dollars expire on December 31 at 11:59pm MST each year so be sure to use your Loyalty Points and dollars prior to this time.</p>
+        </div>
+
+        <button class="accordion">What products are excluded from earning Loyalty Points?</button>
+        <div class="panel">
+            <p>A very limited number of products do not earn Loyalty Points.  These products include gift cards, shipping, licenses, tags, permits, sales tax and other fees.</p>
+        </div>
+
+        <button class="accordion">Can customers/businesses with accounts be part of our loyalty program?</button>
+        <div class="panel">
+            <p>Yes.</p>
+        </div>
+
+        <button class="accordion">Will my receipt show the number of Loyalty Points that I have earned?</button>
+        <div class="panel">
+            <p>Yes, the receipt will show the number of accumulated Loyalty Points earned up to the day prior to the receipt transaction date.</p>
+        </div>
+
+        <button class="accordion">Can an individual earn Loyalty Points on a company account?</button>
+        <div class="panel">
+            <p>No.  Only one account can be chosen to earn Loyalty Points in the system.</p>
+        </div>
+
+        <button class="accordion">What happens to my Loyalty Points if I make a return?</button>
+        <div class="panel">
+            <p>Loyalty Points will be subtracted from the total if a return is made.</p>
+        </div>
+
+        <button class="accordion">Can a C-A-L Ranch employee earn Loyalty Points?</button>
+        <div class="panel">
+            <p>Employees of C-A-L Ranch are not eligible to earn Loyalty Points.</p>
+        </div>
+
+        <button class="accordion">Do I earn Loyalty Points with online purchases?</button>
+        <div class="panel">
+            <p>At this time, only in-store purchase earn Loyalty Points.</p>
+        </div>
+
+        <button class="accordion">Can I redeem my Loyalty Dollars online?</button>
+        <div class="panel">
+            <p>At this time, only in-store purchase redeem Loyalty Dollars.</p>
+        </div>
+    </div>
+
+    <div class="signup">
+        <img src="images/sign-up.png" alt="Loyalty Program Sign-up">
+    </div>
+
+    <div class="bottom-note">
+        <p>PLEASE NOTE: Select items do not earn Loyalty Points such as gift cards, licenses, tags, permits, sales tax, and shipping and fees.
+            <br><br>
+          Loyalty Points and Loyalty Dollars expire on December 31 at 11:59pm MST each year so be sure to use your Loyalty Points and dollars prior to this time.
+        </p>
+    </div>
+
+
+
+    <svg class="svg" height="512pt" viewBox="0 0 512 512" width="512pt" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0"/><path d="m368 272h-224c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h224c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m256 384c-8.832031 0-16-7.167969-16-16v-224c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v224c0 8.832031-7.167969 16-16 16zm0 0"/></svg>
+
+</div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for(i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function(){
+                this.classList.toggle("active");
+
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

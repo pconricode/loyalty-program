@@ -1,0 +1,166 @@
+
+
+
+.top-header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.top-header img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "montserratregular",Helvetica,Arial,sans-serif;
+}
+
+.info-title {
+    color: rgb(176, 26, 33);
+    text-align: center;
+    font-family: "montserratregular",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.info-text {
+    font-family: "montserratregular",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.bottom-header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.bottom-header img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq {
+    background-color: #daeef7;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accordion {
+    background-color: #daeef7;
+    color: #3a70a1;
+    cursor: pointer;
+    padding: 18px;
+    border: 1px solid white;
+    width: 100%;
+    text-align: left;
+    transition: 0.2s;
+    outline: none;
+    font-family: "montserratregular",Helvetica,Arial,sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.panel {
+    padding: 0 18px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    background-color: #daeef7;
+    font-family: "montserratregular",Helvetica,Arial,sans-serif;
+
+}
+
+.active, .accordion:hover {
+    color: rgb(176, 26, 33);
+}
+
+.accordion:before {
+    content: url(../images/plus.png);
+    font-size: 15px;
+    /* float: left; */
+    margin-left: 5px;
+    margin-right: 10px;
+    vertical-align: middle;
+    font-size: 30px;
+    display: inline-block;
+    height: 35px;
+}
+
+.active:before {
+    content: url(../images/minus.png);
+}
+
+.signup {
+    position: absolute;
+    right: 10%;
+}
+
+.bottom-note {
+    margin-top: 200px;
+}
+
+.nowrap {
+   white-space: nowrap; 
+}
+
+.svg {
+    width: 10%;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 1400px) {
+
+    .top-header {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .info {
+        width: 90%;
+    }
+
+    .faq {
+        width: 100%;
+    }
+
+    .signup {
+        position: static;
+        float: right;
+    }
+
+    .bottom-note {
+        margin-top: 175px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .accordion {
+        font-size: 1em;
+    }
+
+    .accordion:before {
+        font-size: 1.2em;
+    }
+}
